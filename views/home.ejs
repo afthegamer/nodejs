@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("partials/head.ejs", {title: 'Hello home'})%>
+<!-- <head>
+    <title>Document</title>
+</head> -->
+<body>
+    <h1>Hello to home!</h1>
+    <div>
+        <%people.forEach(person=> { %>
+            <% if (person.sayHello) { %>
+             <h2>Hello <%=person.name %></h2>
+        <% }else{ %>
+            <h2>Hello <%=person.name %> is here</h2>
+            <% } %> 
+        
+        <%}); %>
+    </div>
+</body>
+
+<%- include ("partials/footer.ejs")%>
+
+</html>
